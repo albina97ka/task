@@ -9,6 +9,7 @@ public class Task {
     }
 
     public Task(String taskName, int categoryId) {
+        // Присваивание значений параметров конструктора переменным объекта класса.
         this.taskName = taskName;
         this.categoryId = categoryId;
     }

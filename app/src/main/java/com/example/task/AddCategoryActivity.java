@@ -21,11 +21,11 @@ public class AddCategoryActivity extends AppCompatActivity {
 
     // Метод для сохранения новой категории
     public void saveCategory(View view) {
-        String categoryName = categoryNameEditText.getText().toString();
+        String categoryName = categoryNameEditText.getText().toString(); //получает текст из текстового поля categoryNameEditText.
 
-        if (!categoryName.isEmpty()) {
-            TaskCategory newCategory = new TaskCategory(categoryName, 0);
-            dbHelper.addCategory(newCategory);
+        if (!categoryName.isEmpty()) { // проверяет, не пустое ли значение categoryName
+            TaskCategory newCategory = new TaskCategory(categoryName, 0); //создает новый объект TaskCategory с заданным именем и количеством задач
+            dbHelper.addCategory(newCategory); //добавляет новую категорию в базу данных
 
             // Возвращение результата в MainActivity
             setResult(RESULT_OK);

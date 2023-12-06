@@ -10,20 +10,22 @@ public class TaskCategory {
     }
 
     public TaskCategory(String categoryName, int taskCount) {
+        // Присваивание значений параметров конструктора переменным объекта класса.
         this.categoryName = categoryName;
         this.taskCount = taskCount;
     }
 
     // конструкторы и методы доступа для всех полей
 
+    //Объявление метода для возврата значения
     public int getId() {
         return id;
     }
 
+    //Объявление метода для установки значения
     public void setId(int id) {
-        this.id = id;
+        this.id = id;//Присваивание переменной id нового значения
     }
-
     public String getCategoryName() {
         return categoryName;
     }
